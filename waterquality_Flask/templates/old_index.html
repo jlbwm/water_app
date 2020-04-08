@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<title>Upload File</title>
+<h1>Photo Upload</h1>
+<form method=post enctype=multipart/form-data>
+     <input type=file name=file>
+     <input type=submit value=upload>
+</form>
+<form method=post action='/resetimage' >
+     <input type=submit value=reset>
+</form>
+<form method=post action='/calculating' >
+     <input type=submit value=calculating>
+</form>
+<br>prediction={{prediction}}
+<br><img src= {{imgurl}}>

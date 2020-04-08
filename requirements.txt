@@ -1,0 +1,15 @@
+flask
+flask-uploads
+gunicorn
+gevent 
+wheel
+pillow
+keras
+numpy
+pandas
+opencv-python
+matplotlib
+scikit-learn
+imageio
+scikit-image
+joblib

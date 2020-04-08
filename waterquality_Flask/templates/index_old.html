@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <title>Upload File</title>
+     </head>
+     <body>
+          <h1>Photo Upload</h1>
+          <h4>Tips: Enable geotagging on ios:</h4>
+          <br>1. Launch Settings from the Home screen of your iPhone or iPad.
+          <br>2. Tap Privacy. You'll have to scroll down a bit to find it.
+          <br>3. Tap Location Services.
+          <br>4. Tap Camera.
+          <br>5. Tap "While using the app".
+          <br>
+          <h5>Please upload no more than 30 images in the same time, it could be very slow!</h5>
+          <form id="uploadForm" method="POST" enctype="multipart/form-data" action='/upload'>
+               <input type="file" name="images" multiple>
+               <input type="submit" value="upload">
+          </form>
+          <form method="post" action='/resetimage'>
+               <input type="submit" value="reset">
+          </form>
+               <!-- <form method=post action='/calculating' >
+                    <input type=submit value=calculating>
+               </form> -->
+               
+          {% for prediction, imgurl, imGeolocation, imtime in items %}
+               <br>prediction = <span class="prediction">{{prediction}}</span>
+               <br>url = <span class="url">{{imgurl}}</span>
+               <br>Geolocation = <span class="Geolocation">{{imGeolocation}}</span>
+               <br>time = <span class="time">{{imtime}}</span>
+               <br><span class="tinyimage"><img src="{{imgurl}}"></span>
+          {% endfor %}
+               
+     </body>
+
+</html>
