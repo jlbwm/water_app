@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.12.3-py3
+FROM tensorflow/tensorflow:1.14.0-py3
 MAINTAINER "Jason Li <jlbwm@mail.missouri.edu>"
 
 WORKDIR /usr/src/water_app

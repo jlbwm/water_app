@@ -55,7 +55,8 @@ def predict(file_name):
     y = np.ones(1, dtype=np.float32)
 
     # load as RGB
-    img = imread(data_path)
+    #img = imread(data_path)
+    img = imread(data_path, as_gray=False, pilmode="RGB")
     # # SKLearn resize
     img = resize(img, (img_height, img_width))
     img = np.array(img)
