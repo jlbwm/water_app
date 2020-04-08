@@ -5,9 +5,9 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import tensorflow as tf
 #config=tf.ConfigProto()
-config = tf.compat.v1.ConfigProto() 
+config = tf.ConfigProto() 
 # config.gpu_options.per_process_gpu_memory_fraction=0.5
-tf.compat.v1.Session(config=config)
+tf.Session(config=config)
 import cv2
 import keras
 import csv
