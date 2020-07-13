@@ -697,7 +697,6 @@ ul.external li a:hover {
 /*=================================================================
 	demos
 ==================================================================*/
-
 #predictionButton{
     display: flex;
 }
@@ -718,52 +717,6 @@ ul.external li a:hover {
     padding: 70px 0 40px;
 }
 
-.testimonial-item {
-    margin: 0 auto;
-    padding-bottom: 50px;
-    width: 64%;
-}
-
-.testimonial-item img {
-    border: 3px solid #fff;
-    border-radius: 50%;
-    display: inline-block;
-    height: auto;
-    max-width: 100px;
-}
-
-.testimonial-item > div {
-    line-height: 30px;
-    position: relative;
-}
-
-.testimonial-item > div:before {
-    background-image: url("../img/icons/quotes.png");
-    background-repeat: no-repeat;
-    bottom: 127px;
-    height: 33px;
-    left: -35px;
-    position: absolute;
-    width: 45px;
-}
-
-.testimonial-item > div:after {
-    background-image: url("../img/icons/quotes.png");
-    background-position: -58px 0;
-    background-repeat: no-repeat;
-    bottom: -50px;
-    height: 33px;
-    position: absolute;
-    right: 0;
-    width: 45px;
-}
-
-.testimonial-item > div > span {
-    display: inline-block;
-    font-weight: 700;
-    margin: 40px 0 30px;
-    text-transform: uppercase;
-}
 
 #demos .owl-controls.clickable {
     margin-top: 20px;
@@ -779,6 +732,33 @@ ul.external li a:hover {
 #demos .owl-next:hover {
     color: #fff;
 }
+
+/*=================================================================
+	Demo upload form
+==================================================================*/
+
+.upload-drop-zone {
+    height: 200px;
+    border-width: 2px;
+    margin-bottom: 20px;
+  }
+  
+  /* skin.css Style*/
+  .upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 200px;
+    text-align: center
+  }
+  .upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+  }
+
+/*=================================================================
+	Demo upload form end
+==================================================================*/
 
 .functionality-table {
     border: 1px solid #e3e3e3;
@@ -919,7 +899,6 @@ ul.external li a:hover {
     border: 2px solid #008ECC;
 }
 
-
 /*=================================================================
 	Contact
 ==================================================================*/
@@ -974,6 +953,7 @@ textarea.form-control {
     display: block;
     margin-left: 24px;
 }
+
 
 
 /*============================================================
@@ -1417,3 +1397,35 @@ textarea.form-control {
         width: 380px;
     }
 }
+
+
+.ion-minus{
+    padding:0px 10px;
+}
+
+.team{
+	background-color:#f6f6f6;
+	padding:60px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.team h4 {
+    margin-top: 20px;
+    color: #5db4c0;
+}
+
+.team .fa{
+    color: #5db4c0;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+#uploadPanelButton {
+    margin-bottom: 10px;
+}
+
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+ }

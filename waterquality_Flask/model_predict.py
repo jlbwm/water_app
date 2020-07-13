@@ -39,13 +39,14 @@ def transform_y(y_pred, scaler_test):
     y_pred = y_pred.flatten()
     return y_pred
 
-def predict(file_name):
+def predict(model, scaler, file_name):
     img_height = 512
     img_width = 512
     num_channels = 3
     batch_size = 1
 
-    scaler = joblib.load('waterquality_Flask/MaxAbsScaler.pkl')
+    # scaler = joblib.load('waterquality_Flask/MaxAbsScaler.pkl')
+    # model = load_model("waterquality_Flask/weights_mobileNet_without_pre1570856691.343963_color.h5")
 
     data_path = file_name
     # data_path = data_path.split('/')[-1]
@@ -62,11 +63,10 @@ def predict(file_name):
     img = np.array(img)
     X[0] = img
 
-    model = load_model("waterquality_Flask/weights_mobileNet_without_pre1570856691.343963_color.h5")
 
     y_pred = model.predict(X, verbose=1)
     y_pred = transform_y(y_pred, scaler)
-    return y_pred
+    return y_pred[0]
 
 
 

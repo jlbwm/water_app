@@ -52,7 +52,15 @@ stdout_logfile=/var/log/waterquality_app/waterquality_app.out.log
 
 `ps -ax |grep gunicorn`
 
+`pstree -ap|grep gunicorn`
+
+`netstat -nlp | grep [portnumber]`
+
 # docker
 
 1. docker build `sudo docker build -t mywater .`
 2. docker run  `docker run -i --name water-1 -p 8000:8000 mywater`
+
+# Standalone Debug
+
+1. remember to first active the test python env: `source miniconda/bin/activate`
