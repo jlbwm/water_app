@@ -323,7 +323,7 @@ def test_upload():
             prediction = str(prediction)
             print("[image test predicton] {}".format(prediction))
 
-            lat, lon = round(random.uniform(-90, 90), 2), round(random.uniform(-90, 90), 2)
+            lat, lon = round(random.uniform(-90, 49), 2), round(random.uniform(-90, 90), 2)
             position = str(lat) + ", " + str(lon)
 
             thumbnail_path = "static/img/thumbnail/0061a_t.JPG"
